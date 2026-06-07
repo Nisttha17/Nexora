@@ -1,136 +1,58 @@
-🌆 Nexora – Smart Billboard Detection System
-💡 Project Overview
+# 🌆 Nexora – Intelligent Billboard Monitoring Platform
 
-Nexora is a Flutter-based mobile application integrated with a RESTful backend API designed to detect and report invalid or unauthorized billboards in cities.
-The goal of this project is to reduce visual pollution, support environmental cleanliness, and help local authorities maintain a smart, sustainable urban infrastructure.
+## 💡 Overview
 
-Users can capture and upload images of billboards, which are analyzed and verified through the backend system to determine their validity. The app provides real-time tracking, location tagging, and reporting functionalities.
+Nexora is a Flutter-powered mobile application combined with a RESTful backend service that helps identify and report unauthorized or non-compliant billboards in urban areas.
 
-🚀 Features
+The system aims to support cleaner city environments, reduce visual clutter, and assist municipal authorities in maintaining organized and sustainable public spaces.
 
-📸 Image Capture & Upload: Capture billboard photos using the Flutter app.
+Users can take photos of billboards and submit them through the mobile app. The backend processes the report, validates billboard information, and enables authorities to monitor and manage billboard compliance efficiently.
 
-🌍 Geo-Location Tracking: Automatically records GPS coordinates for each report.
+## 🚀 Key Features
 
-🧠 Verification System: Backend validates billboard authorization via database or API checks.
+📷 **Billboard Reporting** – Capture and upload billboard images directly from the mobile application.
 
-⚙️ RESTful API Integration: Handles user authentication, image uploads, and verification requests.
+📍 **Location Tracking** – Automatically records the geographical coordinates of each submission.
 
-🗺️ Interactive Dashboard (optional): Displays mapped locations of invalid billboards.
+✅ **Authorization Verification** – Verifies billboard legitimacy using backend validation and stored records.
 
-🔔 Smart Alerts: Notifies authorities about detected or reported invalid billboards.
+🔗 **REST API Connectivity** – Facilitates authentication, report submission, and data exchange between client and server.
 
-🧰 Tech Stack
-Layer	Technologies Used
-Frontend (App)	Flutter, Dart
-Backend	Python / Node.js (REST API)
-Database	MySQL / MongoDB / Firebase
-Cloud Storage	AWS S3 / Firebase Storage
-APIs & Tools	REST API, Google Maps API
-Version Control	Git & GitHub
-⚙️ System Workflow
+🗺️ **Location-Based Monitoring** – Visualizes reported billboard locations for easier analysis and management.
 
-User Registration/Login
+🔔 **Notification System** – Sends alerts regarding newly reported or unauthorized billboards.
 
-Capture Image of a suspected billboard
+## 🧰 Technology Stack
 
-Attach Location (GPS auto-fetch)
+| Layer               | Technologies               |
+| ------------------- | -------------------------- |
+| Mobile Application  | Flutter, Dart              |
+| Backend Services    | Python / Node.js           |
+| Database            | MySQL / MongoDB / Firebase |
+| Storage             | AWS S3 / Firebase Storage  |
+| APIs & Integrations | REST API, Google Maps API  |
+| Version Control     | Git, GitHub                |
 
-Upload to server through REST API
+## ⚙️ Workflow
 
-Backend Verification (check against authorized billboard database)
+1. User signs in or creates an account.
+2. A billboard image is captured through the mobile app.
+3. GPS coordinates are automatically attached.
+4. The report is submitted to the backend via REST APIs.
+5. The system validates the billboard against authorized records.
+6. The billboard is classified as valid or unauthorized.
+7. A report is generated for administrative review and action.
 
-Mark Billboard as Valid or Invalid
+## 🎯 Project Impact
 
-Report Generated for authorities to take action
+✅ Simplifies identification of unauthorized billboards.
 
-📂 Project Structure
-Nexora/
-│
-├── frontend/                  # Flutter mobile app
-│   ├── lib/
-│   ├── assets/
-│   └── pubspec.yaml
-│
-├── backend/                   # REST API
-│   ├── app.py (or server.js)
-│   ├── routes/
-│   ├── models/
-│   ├── controllers/
-│   └── database/
-│
-├── docs/                      # Documentation, API specs
-└── README.md
+✅ Supports cleaner and more visually organized urban spaces.
 
-🧪 Example API Endpoints
-Method	Endpoint	Description
-POST	/api/auth/register	Register a new user
-POST	/api/billboard/report	Upload image and location
-GET	/api/billboard/list	Get all billboard reports
-PUT	/api/billboard/update/:id	Update billboard status
-DELETE	/api/billboard/:id	Delete report
-📦 Installation & Setup
-Frontend (Flutter)
-# Navigate to frontend folder
-cd frontend
+✅ Assists authorities with data-driven monitoring and decision-making.
 
-# Install dependencies
-flutter pub get
+## 🌍 Future Scope
 
-# Run the app
-flutter run
-
-Backend (Python Example)
-# Navigate to backend folder
-cd backend
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the API
-python app.py
-
-🎯 Outcome
-
-✅ Detects and reports unauthorized billboards
-✅ Helps reduce visual and environmental pollution
-✅ Enables smarter city management through data-driven insights
-
-🌍 Future Enhancements
-
-Integrate AI-based image recognition for automatic billboard validation
-
-Add admin web dashboard for city monitoring
-
-Implement real-time notifications to municipal departments
-
-🧑‍💻 Author
-
-Ritesh Nayase
-📧 [Add your email here]
-🌐 GitHub Profile
-
-🏷️ GitHub Topics
-flutter
-dart
-mobile-application
-rest-api
-smart-city
-environment
-pollution-control
-ai
-machine-learning
-image-processing
-python
-nodejs
-mysql
-mongodb
-firebase
-geo-location
-urban-planning
-environmental-awareness
-smart-infrastructure
-
-🔖 Short Tagline (for GitHub repo description)
-
-“A Flutter + REST API solution to detect and report unauthorized billboards, promoting cleaner and smarter cities.”
+- Integrate AI-powered image analysis for automated billboard detection.
+- Develop a dedicated administrative dashboard for city-wide monitoring.
+- Enable real-time notifications for municipal departments and enforcement teams.
